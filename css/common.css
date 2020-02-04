@@ -48,8 +48,11 @@ li a {
 }
 
 ul > li:hover {
-  /* color: #ff00ff; */
   text-decoration: underline;
+}
+
+.box-hero-A ul > li:hover {
+  text-decoration: none;
 }
 
 
