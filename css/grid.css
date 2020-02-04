@@ -1,0 +1,222 @@
+.wrapper {
+  width: 90%;
+  max-width: 1240px;
+/*  this width controls the max of the css-grids*/
+  margin: 0 auto;
+  /* padding: 0 15px; */
+/* this controls the outside of the window so elements have same as grid-gap */
+  }
+
+/* make margin gap vertically for stacked single-columns on mobile only */
+  .skeleton div {
+    margin: 15px 0;
+  }
+
+  .menu {
+    padding: 10px 00px 10px 0px;
+    /* margin: 10px 0px 10px 0px; */
+
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto) ;
+    grid-gap: 20px;
+    }
+
+
+    .menu_left, .box-hero-B {
+      font-family: 'Inconsolata', monospace;
+      font-size: 18px;
+      font-weight: 400;
+      }
+
+
+    .hero {
+      padding: 100px 0px 10px 0px;
+    }
+
+    .menu_right {
+      grid-column: col 2 / span 1;
+      padding-top: 8px;
+      justify-self: end;
+      justify-items: right;
+      }
+
+.client {
+      align-items: center;
+      box-shadow: none;
+      border-top: 1px dotted #bbbbbb;
+      background: none;
+      padding: 15px 0px 15px 0px;
+      margin: 10px;
+        }
+
+
+
+/* mobile first! */
+@media (min-width: 550px) {
+
+  .band {
+    padding-top: 30px;
+    top: 15px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto) ;
+    grid-gap: 20px;
+  }
+
+  .menu {
+    top: 15px;
+    padding: 20px 30px 15px 0px;
+    margin: 40px 0px 20px 20px;
+
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto) ;
+    grid-gap: 20px;
+    }
+
+  .menu_left {
+      grid-column: col / span 6;
+      font-size: 22px;
+    }
+
+  .box-hero-B {
+    font-size: 22px;
+  }
+
+  .menu_right {
+    grid-column: col 9 / span 3;
+    justify-self: end;
+    justify-items: right;
+    }
+
+  .wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto) ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+/* - make margin gap zero for stacked divs above mobile  */
+  .skeleton div {
+    margin: 0;
+  }
+
+  .header {
+    grid-column: col / span 12;
+    grid-row: 1 ;
+  }
+
+  .item-1, .item-4 {
+    grid-column: 1/ span 2;
+  }
+
+  .item-5 {
+    grid-column: 3/ span 2;
+  }
+
+/* hero text left and right  */
+
+  .box-hero-A {
+    /* position on intro list */
+    grid-column: col / span 6;
+    grid-row: row 9;
+  }
+
+  .box-hero-B {
+    /* position on intro paragraph */
+    grid-column: col 1 / span 10;
+    grid-row: row 10;
+    margin-bottom: 40px;
+  }
+
+  .client {
+    box-shadow: none;
+    height: 200px;
+    padding: 40px 0px  40px 0px;
+  }
+
+
+/* tablet and desktop */
+
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .band-title {
+    padding: 10px 0px 0px 0px;
+    margin-bottom: -25px;
+  }
+
+  .menu {
+    top: 15px;
+    padding: 20px 30px 15px 0px;
+    margin: 0px 30px 0px 30px;
+
+
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr );
+    grid-template-rows: repeat(1, [row] auto) ;
+    grid-gap: 20px;
+    }
+
+  .menu_left {
+      grid-column: col / span 6;
+      }
+
+  .menu_right {
+    grid-column: col 11 / span 2;
+    }
+
+  .box-hero-A {
+    /* position on intro list */
+    grid-column: col / span 10;
+    grid-row: row 9;
+  }
+
+  .box-hero-B {
+    /* position on intro paragraph */
+    grid-column: col 1 / span 8;
+    grid-row: row 10;
+    margin-bottom: 40px;
+  }
+
+
+
+  .item-1, .item-4 {
+    grid-column: 1/ span 2;
+  }
+
+  .item-5 {
+    grid-column: 3/ span 2;
+  }
+
+}
