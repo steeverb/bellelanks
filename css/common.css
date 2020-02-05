@@ -195,7 +195,7 @@ ul > li:hover {
 
 /* FIX LATER removing the pound signs here strips these id's of styling */
 #navbar {
-  background-color: #222;
+  background-color: #061626;
   position: fixed;
   top: 0;
   width: 100%;
@@ -220,7 +220,7 @@ ul > li:hover {
 
 .hero {
   background-color: #222;
-  color: #555;
+  color: #061626;
   margin: 0;
   /* padding: 2em; */
   position: relative;
@@ -228,7 +228,7 @@ ul > li:hover {
 }
 
 .hero_1 {
-  /* background-image: url('../images/bg_hero7.jpg'); */
+  background-image: url('../images/claisse_2_small.jpg');
   background-size: cover;
   width: 100%;
   height: auto;
