@@ -159,6 +159,31 @@
     padding: 40px 0px  40px 0px;
   }
 
+/* tablet v and "phablet" */
+
+@media only screen and (min-width: 551px) {
+  .band {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .band-title {
+    grid-column: 1/ span 2;
+  }
+
+  .header {
+    grid-column: col / span 2;
+    grid-row: 1 ;
+  }
+
+  .item-1, .item-4 {
+    grid-column: 1/ span 1;
+  }
+
+  .item-5 {
+    grid-column: 2/ span 1;
+  }
+
+
 
 /* tablet and desktop */
 
