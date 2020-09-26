@@ -98,7 +98,6 @@ ul > li:hover {
 /* section from the flexbox tutorial */
 /* customized for me */
 .band-title {
-  grid-column: 1/ span 4;
   padding: 30px 0px 0px 10px;
   margin-bottom: -5px;
 }
