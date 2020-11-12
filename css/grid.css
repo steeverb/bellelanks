@@ -39,7 +39,7 @@
       padding: 100px 0px 10px 0px;
     }
 
-    .menu_right {
+     .menu_right {
       grid-column: col 2 / span 1;
       padding-top: 8px;
       justify-self: end;
@@ -47,12 +47,18 @@
       }
 
 .client {
-      align-items: center;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-auto-flow: column;
       box-shadow: none;
-      border-top: 1px dotted #bbbbbb;
+      height: 200px;
+      padding: 40px 10px 40px 10px;
+      margin: 10px auto;
+      box-shadow: none;
+      border-top: 1px dotted #ccccff;
       background: none;
-      padding: 15px 0px 15px 0px;
-      margin: 10px;
+
         }
 
 
@@ -156,7 +162,7 @@
   .client {
     box-shadow: none;
     height: 200px;
-    padding: 40px 0px  40px 0px;
+    padding: 40px 0px 40px 0px;
   }
 
 /* tablet v and "phablet" */
@@ -168,6 +174,10 @@
 
   .band-title {
     grid-column: 1/ span 2;
+  }
+
+  .list {
+    grid-column: 1/ span 4;
   }
 
   .header {
