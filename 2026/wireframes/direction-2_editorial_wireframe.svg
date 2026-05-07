@@ -1,0 +1,300 @@
+<svg viewBox="0 0 1180 1700" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+
+  <!-- =========================== TITLE STRIP =========================== -->
+  <text x="40" y="32" font-size="16" font-weight="500" fill="rgb(20,20,19)">Belinda Lanks portfolio — Direction 2 (Editorial / serif-led)</text>
+  <text x="40" y="52" font-size="11" fill="rgb(61,61,58)">One-pager. Magazine sensibility: cover, featured case, byline grid, typographic client list. Desktop + mobile, side by side.</text>
+
+  <!-- =========================== LEFT PAGE — DESKTOP =========================== -->
+  <text x="80" y="92" font-family="ui-monospace, monospace" font-size="12" font-weight="500" fill="rgb(20,20,19)">/</text>
+  <text x="100" y="92" font-size="11" fill="rgb(61,61,58)">— desktop (≥ 720px)</text>
+
+  <!-- desktop page frame -->
+  <rect x="80" y="108" width="540" height="1500" rx="6" fill="none" stroke="rgb(20,20,19)" stroke-width="0.8" opacity="0.55"/>
+
+  <!-- masthead -->
+  <text x="100" y="136" font-size="12" font-weight="500" fill="rgb(20,20,19)" font-style="italic">Belinda Lanks</text>
+  <text x="100" y="150" font-size="9" fill="rgb(61,61,58)" letter-spacing="1.2">EDITORIAL STRATEGY · EST. NYC</text>
+  <text x="600" y="142" text-anchor="end" font-size="9" fill="rgb(61,61,58)" letter-spacing="1.2">FEATURE  WORK  CLIENTS  WRITING  CONTACT</text>
+  <line x1="100" y1="160" x2="600" y2="160" stroke="rgb(61,61,58)" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- COVER SECTION -->
+  <text x="100" y="186" font-size="9" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">ISSUE No. 26 — SPRING 2026</text>
+  <text x="100" y="226" font-size="26" font-weight="400" fill="rgb(20,20,19)" font-family="serif">The story <tspan font-style="italic" fill="rgb(178,68,24)">has</tspan> to come</text>
+  <text x="100" y="256" font-size="26" font-weight="400" fill="rgb(20,20,19)" font-family="serif">first.</text>
+  <text x="100" y="288" font-size="11" fill="rgb(61,61,58)" font-family="serif">Belinda Lanks is an editor, content strategist, and writer in</text>
+  <text x="100" y="304" font-size="11" fill="rgb(61,61,58)" font-family="serif">Brooklyn — shaping editorial systems for design-forward brands</text>
+  <text x="100" y="320" font-size="11" fill="rgb(61,61,58)" font-family="serif">and writing about culture, design, and the lives we build inside.</text>
+
+  <!-- cover art plate -->
+  <rect x="100" y="340" width="500" height="180" rx="4" fill="rgb(20,26,43)" opacity="0.85"/>
+  <text x="350" y="436" text-anchor="middle" font-size="10" fill="rgb(220,220,220)">[ hero artwork — full-bleed plate ]</text>
+  <rect x="100" y="520" width="500" height="22" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="112" y="535" font-size="9" fill="rgb(61,61,58)" font-style="italic">After Geneviève Claisse, Petit Grumeau — placeholder for original artwork.</text>
+
+  <!-- divider -->
+  <line x1="100" y1="568" x2="600" y2="568" stroke="rgb(61,61,58)" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- FEATURED CASE -->
+  <text x="100" y="592" font-size="9" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">FEATURED CASE</text>
+  <line x1="100" y1="598" x2="200" y2="598" stroke="rgb(178,68,24)" stroke-width="1"/>
+  <text x="100" y="630" font-size="20" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Building <tspan font-style="italic">Samsung Explore</tspan> into</text>
+  <text x="100" y="654" font-size="20" font-weight="500" fill="rgb(20,20,19)" font-family="serif">an award-winning lifestyle</text>
+  <text x="100" y="678" font-size="20" font-weight="500" fill="rgb(20,20,19)" font-family="serif">publication.</text>
+  <!-- drop-cap deck -->
+  <text x="100" y="722" font-size="36" font-weight="700" fill="rgb(178,68,24)" font-family="serif">A</text>
+  <text x="130" y="710" font-size="10" fill="rgb(61,61,58)" font-family="serif">s editor-in-chief at Razorfish, I led the editorial</text>
+  <text x="130" y="724" font-size="10" fill="rgb(61,61,58)" font-family="serif">vision for Explore — a branded magazine designed to</text>
+  <text x="100" y="740" font-size="10" fill="rgb(61,61,58)" font-family="serif">help readers elevate their passions with tech, not be sold to</text>
+  <text x="100" y="754" font-size="10" fill="rgb(61,61,58)" font-family="serif">by it. Won industry recognition; became a model for what</text>
+  <text x="100" y="768" font-size="10" fill="rgb(61,61,58)" font-family="serif">brand journalism can be when the words come first.</text>
+
+  <!-- featured hero -->
+  <rect x="100" y="784" width="500" height="160" rx="4" fill="rgb(245,244,237)" opacity="0.9"/>
+  <text x="350" y="868" text-anchor="middle" font-size="10" fill="rgb(120,120,120)">[ feature hero image — 16:9 ]</text>
+
+  <!-- meta dl -->
+  <line x1="100" y1="964" x2="600" y2="964" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <text x="100" y="982" font-size="8" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">ROLE</text>
+  <text x="100" y="996" font-size="10" fill="rgb(20,20,19)" font-family="serif">Editor-in-chief</text>
+  <text x="225" y="982" font-size="8" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">CLIENT</text>
+  <text x="225" y="996" font-size="10" fill="rgb(20,20,19)" font-family="serif">Samsung via Razorfish</text>
+  <text x="380" y="982" font-size="8" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">OUTPUT</text>
+  <text x="380" y="996" font-size="10" fill="rgb(20,20,19)" font-family="serif">Long-form, edit cal</text>
+  <text x="510" y="982" font-size="8" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">READ</text>
+  <text x="510" y="996" font-size="10" fill="rgb(178,68,24)" font-family="serif">explore →</text>
+
+  <!-- divider -->
+  <line x1="100" y1="1024" x2="600" y2="1024" stroke="rgb(61,61,58)" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- EDITORIAL ENTRIES -->
+  <text x="100" y="1048" font-size="9" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">THE PORTFOLIO</text>
+  <line x1="100" y1="1054" x2="180" y2="1054" stroke="rgb(178,68,24)" stroke-width="1"/>
+  <text x="100" y="1080" font-size="18" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Editorial Strategy &amp; Direction</text>
+
+  <!-- 3 columns × 2 rows = 6 entries -->
+  <!-- row 1 -->
+  <line x1="100" y1="1100" x2="260" y2="1100" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="100" y="1108" width="160" height="72" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="100" y="1196" font-size="8" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">FOUNDING ED.-IN-CHIEF</text>
+  <text x="100" y="1212" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Magenta</text>
+  <text x="100" y="1226" font-size="9" fill="rgb(61,61,58)" font-family="serif">Huge's publication for the</text>
+  <text x="100" y="1238" font-size="9" fill="rgb(61,61,58)" font-family="serif">people who think about people…</text>
+
+  <line x1="270" y1="1100" x2="430" y2="1100" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="270" y="1108" width="160" height="72" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="270" y="1196" font-size="8" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">ORGANIZER</text>
+  <text x="270" y="1212" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Magenta Teaches</text>
+  <text x="270" y="1226" font-size="9" fill="rgb(61,61,58)" font-family="serif">A live knowledge-sharing</text>
+  <text x="270" y="1238" font-size="9" fill="rgb(61,61,58)" font-family="serif">series for creatives.</text>
+
+  <line x1="440" y1="1100" x2="600" y2="1100" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="440" y="1108" width="160" height="72" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="440" y="1196" font-size="8" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">CONSULTANT</text>
+  <text x="440" y="1212" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">SY Partners</text>
+  <text x="440" y="1226" font-size="9" fill="rgb(61,61,58)" font-family="serif">Editorial strategy for digital</text>
+  <text x="440" y="1238" font-size="9" fill="rgb(61,61,58)" font-family="serif">products at the studio.</text>
+
+  <!-- row 2 -->
+  <line x1="100" y1="1262" x2="260" y2="1262" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="100" y="1270" width="160" height="72" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="100" y="1358" font-size="8" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">EDITOR</text>
+  <text x="100" y="1374" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">FastCo Co.Design</text>
+
+  <line x1="270" y1="1262" x2="430" y2="1262" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="270" y="1270" width="160" height="72" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="270" y="1358" font-size="8" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">EDITOR</text>
+  <text x="270" y="1374" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Who Are You, Really?</text>
+
+  <line x1="440" y1="1262" x2="600" y2="1262" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="440" y="1270" width="160" height="72" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="440" y="1358" font-size="8" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">RESEARCHER · WRITER</text>
+  <text x="440" y="1374" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Disrupt Aging</text>
+
+  <!-- divider -->
+  <line x1="100" y1="1402" x2="600" y2="1402" stroke="rgb(61,61,58)" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- MASTHEAD-STYLE CLIENT LIST -->
+  <text x="100" y="1426" font-size="9" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">THE MASTHEAD</text>
+  <line x1="100" y1="1432" x2="190" y2="1432" stroke="rgb(178,68,24)" stroke-width="1"/>
+  <text x="100" y="1456" font-size="18" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Publications &amp; Clients</text>
+
+  <!-- 2 columns of italic/roman names -->
+  <text x="100" y="1486" font-size="14" font-style="italic" fill="rgb(61,61,58)" font-family="serif">The Wall Street Journal</text>
+  <line x1="100" y1="1494" x2="340" y2="1494" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+  <text x="100" y="1512" font-size="14" fill="rgb(20,20,19)" font-family="serif">Bloomberg Businessweek</text>
+  <line x1="100" y1="1520" x2="340" y2="1520" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+  <text x="100" y="1538" font-size="14" font-style="italic" fill="rgb(61,61,58)" font-family="serif">WIRED</text>
+  <line x1="100" y1="1546" x2="340" y2="1546" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+  <text x="100" y="1564" font-size="14" fill="rgb(20,20,19)" font-family="serif">Fast Company</text>
+  <line x1="100" y1="1572" x2="340" y2="1572" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+
+  <text x="360" y="1486" font-size="14" fill="rgb(20,20,19)" font-family="serif">Samsung</text>
+  <line x1="360" y1="1494" x2="600" y2="1494" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+  <text x="360" y="1512" font-size="14" font-style="italic" fill="rgb(61,61,58)" font-family="serif">Huge</text>
+  <line x1="360" y1="1520" x2="600" y2="1520" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+  <text x="360" y="1538" font-size="14" fill="rgb(20,20,19)" font-family="serif">SYPartners</text>
+  <line x1="360" y1="1546" x2="600" y2="1546" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+  <text x="360" y="1564" font-size="14" font-style="italic" fill="rgb(61,61,58)" font-family="serif">… 12 more</text>
+  <line x1="360" y1="1572" x2="600" y2="1572" stroke="rgb(214,205,184)" stroke-width="0.4"/>
+
+  <text x="600" y="1592" text-anchor="end" font-size="10" fill="rgb(61,61,58)" font-style="italic">↓ continues: Selected Writing → Archive → Colophon</text>
+
+  <!-- =========================== ANNOTATIONS — left page =========================== -->
+  <!-- Cover -->
+  <path d="M 620 246 L 660 246" stroke="rgb(50,102,173)" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.6" fill="none"/>
+  <text x="668" y="242" font-size="11" font-style="italic" fill="rgb(50,102,173)">Cover treatment — kicker, big italic</text>
+  <text x="668" y="256" font-size="11" font-style="italic" fill="rgb(50,102,173)">serif headline, byline as deck.</text>
+  <text x="668" y="270" font-size="11" font-style="italic" fill="rgb(50,102,173)">Reads like an issue cover, not</text>
+  <text x="668" y="284" font-size="11" font-style="italic" fill="rgb(50,102,173)">a personal site.</text>
+
+  <!-- Featured case -->
+  <path d="M 620 700 L 660 700" stroke="rgb(50,102,173)" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.6" fill="none"/>
+  <text x="668" y="696" font-size="11" font-style="italic" fill="rgb(50,102,173)">Featured case study with drop cap.</text>
+  <text x="668" y="710" font-size="11" font-style="italic" fill="rgb(50,102,173)">The page itself demonstrates</text>
+  <text x="668" y="724" font-size="11" font-style="italic" fill="rgb(50,102,173)">"editorial strategy."</text>
+
+  <!-- Entries -->
+  <path d="M 620 1190 L 660 1190" stroke="rgb(50,102,173)" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.6" fill="none"/>
+  <text x="668" y="1186" font-size="11" font-style="italic" fill="rgb(50,102,173)">3-up entry grid. Italic role tag,</text>
+  <text x="668" y="1200" font-size="11" font-style="italic" fill="rgb(50,102,173)">serif title, prose description.</text>
+  <text x="668" y="1214" font-size="11" font-style="italic" fill="rgb(50,102,173)">No card chrome — top-rule only.</text>
+
+  <!-- Masthead -->
+  <path d="M 620 1530 L 660 1530" stroke="rgb(50,102,173)" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.6" fill="none"/>
+  <text x="668" y="1526" font-size="11" font-style="italic" fill="rgb(50,102,173)">Typographic client list — no logos.</text>
+  <text x="668" y="1540" font-size="11" font-style="italic" fill="rgb(50,102,173)">Alternating italic/roman, like a</text>
+  <text x="668" y="1554" font-size="11" font-style="italic" fill="rgb(50,102,173)">magazine masthead.</text>
+
+  <!-- =========================== RIGHT PAGE — MOBILE =========================== -->
+  <text x="900" y="92" font-family="ui-monospace, monospace" font-size="12" font-weight="500" fill="rgb(20,20,19)">/</text>
+  <text x="920" y="92" font-size="11" fill="rgb(61,61,58)">— mobile (≤ 720px)</text>
+
+  <!-- mobile phone bezel -->
+  <rect x="884" y="108" width="232" height="1500" rx="20" fill="none" stroke="rgb(20,20,19)" stroke-width="1.2" opacity="0.55"/>
+  <rect x="900" y="124" width="200" height="1468" rx="4" fill="none" stroke="rgb(20,20,19)" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- mobile masthead -->
+  <text x="908" y="146" font-size="10" font-weight="500" fill="rgb(20,20,19)" font-style="italic">Belinda Lanks</text>
+  <text x="1092" y="146" text-anchor="end" font-size="9" fill="rgb(61,61,58)">≡</text>
+  <line x1="908" y1="156" x2="1092" y2="156" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+
+  <!-- mobile cover -->
+  <text x="908" y="180" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">ISSUE No. 26 — SPRING 2026</text>
+  <text x="908" y="208" font-size="16" font-weight="400" fill="rgb(20,20,19)" font-family="serif">The story <tspan font-style="italic" fill="rgb(178,68,24)">has</tspan></text>
+  <text x="908" y="226" font-size="16" font-weight="400" fill="rgb(20,20,19)" font-family="serif">to come first.</text>
+  <text x="908" y="246" font-size="9" fill="rgb(61,61,58)" font-family="serif">Belinda Lanks is an editor,</text>
+  <text x="908" y="258" font-size="9" fill="rgb(61,61,58)" font-family="serif">content strategist, and writer in</text>
+  <text x="908" y="270" font-size="9" fill="rgb(61,61,58)" font-family="serif">Brooklyn.</text>
+
+  <!-- mobile cover plate -->
+  <rect x="908" y="284" width="184" height="100" rx="3" fill="rgb(20,26,43)" opacity="0.85"/>
+  <text x="1000" y="338" text-anchor="middle" font-size="8" fill="rgb(220,220,220)">[ hero artwork ]</text>
+  <rect x="908" y="384" width="184" height="16" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="912" y="395" font-size="7" fill="rgb(61,61,58)" font-style="italic">caption…</text>
+
+  <line x1="908" y1="420" x2="1092" y2="420" stroke="rgb(61,61,58)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- mobile featured case -->
+  <text x="908" y="442" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">FEATURED CASE</text>
+  <line x1="908" y1="446" x2="970" y2="446" stroke="rgb(178,68,24)" stroke-width="0.8"/>
+  <text x="908" y="468" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Building <tspan font-style="italic">Samsung</tspan></text>
+  <text x="908" y="484" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif"><tspan font-style="italic">Explore</tspan> into an</text>
+  <text x="908" y="500" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">award-winning…</text>
+
+  <text x="908" y="528" font-size="22" font-weight="700" fill="rgb(178,68,24)" font-family="serif">A</text>
+  <text x="930" y="522" font-size="9" fill="rgb(61,61,58)" font-family="serif">s editor-in-chief</text>
+  <text x="930" y="534" font-size="9" fill="rgb(61,61,58)" font-family="serif">at Razorfish, I led</text>
+  <text x="908" y="548" font-size="9" fill="rgb(61,61,58)" font-family="serif">the editorial vision for</text>
+  <text x="908" y="560" font-size="9" fill="rgb(61,61,58)" font-family="serif">Explore — a branded magazine.</text>
+
+  <rect x="908" y="576" width="184" height="100" rx="3" fill="rgb(245,244,237)" opacity="0.9"/>
+  <text x="1000" y="630" text-anchor="middle" font-size="8" fill="rgb(120,120,120)">[ hero image ]</text>
+
+  <!-- mobile meta - stacked -->
+  <line x1="908" y1="694" x2="1092" y2="694" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <text x="908" y="710" font-size="7" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">ROLE</text>
+  <text x="950" y="710" font-size="9" fill="rgb(20,20,19)" font-family="serif">Editor-in-chief</text>
+  <line x1="908" y1="720" x2="1092" y2="720" stroke="rgb(214,205,184)" stroke-width="0.3"/>
+  <text x="908" y="734" font-size="7" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">CLIENT</text>
+  <text x="950" y="734" font-size="9" fill="rgb(20,20,19)" font-family="serif">Samsung / Razorfish</text>
+  <line x1="908" y1="744" x2="1092" y2="744" stroke="rgb(214,205,184)" stroke-width="0.3"/>
+  <text x="908" y="758" font-size="7" fill="rgb(61,61,58)" letter-spacing="1.5" font-weight="600">READ</text>
+  <text x="950" y="758" font-size="9" fill="rgb(178,68,24)" font-family="serif">explore →</text>
+
+  <line x1="908" y1="784" x2="1092" y2="784" stroke="rgb(61,61,58)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- mobile entries (1-up stack) -->
+  <text x="908" y="806" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">THE PORTFOLIO</text>
+  <line x1="908" y1="810" x2="970" y2="810" stroke="rgb(178,68,24)" stroke-width="0.8"/>
+  <text x="908" y="830" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Editorial Strategy</text>
+
+  <line x1="908" y1="846" x2="1092" y2="846" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="908" y="852" width="184" height="80" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="908" y="950" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">FOUNDING ED.-IN-CHIEF</text>
+  <text x="908" y="966" font-size="11" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Magenta</text>
+
+  <line x1="908" y1="990" x2="1092" y2="990" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <rect x="908" y="996" width="184" height="80" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="908" y="1094" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">ORGANIZER</text>
+  <text x="908" y="1110" font-size="11" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Magenta Teaches</text>
+
+  <line x1="908" y1="1134" x2="1092" y2="1134" stroke="rgb(61,61,58)" stroke-width="0.4" opacity="0.5"/>
+  <text x="1000" y="1156" text-anchor="middle" font-size="9" fill="rgb(61,61,58)" font-style="italic">↓ 4 more entries stack below</text>
+
+  <line x1="908" y1="1182" x2="1092" y2="1182" stroke="rgb(61,61,58)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- mobile masthead list (1-col) -->
+  <text x="908" y="1204" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">THE MASTHEAD</text>
+  <text x="908" y="1230" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Publications &amp; Clients</text>
+  <text x="908" y="1252" font-size="11" font-style="italic" fill="rgb(61,61,58)" font-family="serif">The Wall Street Journal</text>
+  <line x1="908" y1="1258" x2="1092" y2="1258" stroke="rgb(214,205,184)" stroke-width="0.3"/>
+  <text x="908" y="1272" font-size="11" fill="rgb(20,20,19)" font-family="serif">Bloomberg Businessweek</text>
+  <line x1="908" y1="1278" x2="1092" y2="1278" stroke="rgb(214,205,184)" stroke-width="0.3"/>
+  <text x="908" y="1292" font-size="11" font-style="italic" fill="rgb(61,61,58)" font-family="serif">WIRED</text>
+  <line x1="908" y1="1298" x2="1092" y2="1298" stroke="rgb(214,205,184)" stroke-width="0.3"/>
+  <text x="1000" y="1316" text-anchor="middle" font-size="9" fill="rgb(61,61,58)" font-style="italic">↓ 13 more, single column</text>
+
+  <line x1="908" y1="1342" x2="1092" y2="1342" stroke="rgb(61,61,58)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- mobile bylines preview -->
+  <text x="908" y="1364" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">THE BYLINES</text>
+  <text x="908" y="1390" font-size="13" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Selected Writing</text>
+  <rect x="908" y="1408" width="184" height="80" rx="3" fill="rgb(245,244,237)" opacity="0.8"/>
+  <text x="908" y="1502" font-size="7" fill="rgb(178,68,24)" letter-spacing="1.5" font-weight="600">WSJ · BOOK REVIEW</text>
+  <text x="908" y="1516" font-size="11" font-weight="500" fill="rgb(20,20,19)" font-family="serif">'How Great Ideas</text>
+  <text x="908" y="1530" font-size="11" font-weight="500" fill="rgb(20,20,19)" font-family="serif">Happen' — feature</text>
+  <text x="908" y="1546" font-size="9" fill="rgb(61,61,58)">Jan 30, 2026</text>
+  <text x="1000" y="1574" text-anchor="middle" font-size="9" fill="rgb(61,61,58)" font-style="italic">↓ archive + colophon below</text>
+
+  <!-- =========================== ANNOTATIONS — right page =========================== -->
+  <path d="M 1116 472 L 1146 472" stroke="rgb(50,102,173)" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.6" fill="none"/>
+  <text x="1080" y="660" font-size="10" font-style="italic" fill="rgb(50,102,173)" text-anchor="end" transform="rotate(0)"></text>
+
+  <!-- Mobile note 1 -->
+  <text x="884" y="120" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">single column,</text>
+  <text x="884" y="134" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">nav collapses to ≡</text>
+
+  <!-- Mobile note 2 -->
+  <text x="884" y="350" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">cover plate stays</text>
+  <text x="884" y="364" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">prominent —</text>
+  <text x="884" y="378" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">image content</text>
+  <text x="884" y="392" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">should be</text>
+  <text x="884" y="406" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">centered</text>
+
+  <!-- Mobile note 3 -->
+  <text x="884" y="900" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">3-col entry</text>
+  <text x="884" y="914" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">grid → 1-col</text>
+  <text x="884" y="928" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">stack on phone</text>
+
+  <!-- Mobile note 4 -->
+  <text x="884" y="1264" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">2-col masthead</text>
+  <text x="884" y="1278" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">becomes 1-col,</text>
+  <text x="884" y="1292" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">italics still alternate</text>
+
+  <!-- =========================== STRUCTURE LEGEND =========================== -->
+  <text x="80" y="1648" font-size="12" font-weight="500" fill="rgb(20,20,19)">Page rhythm (top → bottom)</text>
+  <text x="80" y="1668" font-family="ui-monospace, monospace" font-size="10.5" fill="rgb(61,61,58)">cover  ·  featured case  ·  editorial entries  ·  masthead list  ·  selected writing  ·  archive  ·  colophon</text>
+
+  <text x="1100" y="1648" text-anchor="end" font-size="11" font-style="italic" fill="rgb(50,102,173)">All on one URL — long scroll, no separate pages.</text>
+
+</svg>
