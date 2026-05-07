@@ -1,0 +1,445 @@
+/* =========================================================
+   Belinda Lanks — Direction 1 · Refresh + Modernize
+   Faithful to the original card-grid editorial layout, with
+   bug fixes, a coherent type system, a real accent color,
+   accessibility, and light/dark mode.
+   ========================================================= */
+
+:root {
+  /* Light theme */
+  --bg: #f4f1ea;             /* warm paper */
+  --bg-elev: #ffffff;        /* card */
+  --ink: #1a1a1a;            /* primary text */
+  --ink-muted: #5a5a5a;      /* meta / role */
+  --rule: #e3ddcf;           /* hairlines */
+  --accent: #b34418;         /* warm brick — single accent, used for links/hover/role */
+  --accent-ink: #ffffff;
+  --hero-bg: #0e1a2b;        /* dark navy */
+  --hero-ink: #ffffff;
+  --shadow-sm: 0 1px 2px rgba(20,20,20,.05), 0 2px 8px rgba(20,20,20,.06);
+  --shadow-md: 0 4px 12px rgba(20,20,20,.08), 0 12px 28px rgba(20,20,20,.10);
+
+  --max: 1240px;
+  --pad: clamp(1.25rem, 4vw, 2.5rem);
+  --gap: clamp(1rem, 2vw, 1.5rem);
+
+  --radius: 6px;
+  --t: 200ms cubic-bezier(.2,.7,.2,1);
+
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Inconsolata", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171c;
+    --bg-elev: #1c2026;
+    --ink: #ececec;
+    --ink-muted: #9aa0a8;
+    --rule: #2a2f37;
+    --accent: #f08a5a;
+    --hero-bg: #050a14;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.3), 0 2px 8px rgba(0,0,0,.35);
+    --shadow-md: 0 4px 12px rgba(0,0,0,.45), 0 12px 28px rgba(0,0,0,.5);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #14171c;
+  --bg-elev: #1c2026;
+  --ink: #ececec;
+  --ink-muted: #9aa0a8;
+  --rule: #2a2f37;
+  --accent: #f08a5a;
+  --hero-bg: #050a14;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.3), 0 2px 8px rgba(0,0,0,.35);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.45), 0 12px 28px rgba(0,0,0,.5);
+}
+
+/* ---------- Reset / base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--accent); text-decoration: none; transition: color var(--t); }
+a:hover { color: var(--ink); }
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute; top: -100px; left: 1rem;
+  background: var(--ink); color: var(--bg);
+  padding: .5rem .75rem; border-radius: 4px;
+  z-index: 200;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(160%) blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+.nav__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: .9rem var(--pad);
+  display: flex; align-items: center; gap: 1.25rem;
+}
+.nav__brand {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  margin-right: auto;
+}
+.nav__links {
+  display: flex; gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: .92rem;
+}
+.nav__links a {
+  color: var(--ink-muted);
+  padding: .5rem .25rem;
+  border-bottom: 1px solid transparent;
+}
+.nav__links a:hover { color: var(--ink); }
+.nav__links a.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+.nav__theme {
+  width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--rule); border-radius: 999px;
+  background: transparent; color: var(--ink); cursor: pointer;
+  transition: background var(--t), color var(--t);
+}
+.nav__theme:hover { background: var(--rule); }
+
+@media (max-width: 640px) {
+  .nav__links { display: none; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: clamp(560px, 88vh, 880px);
+  background: var(--hero-bg);
+  color: var(--hero-ink);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+}
+.hero__art {
+  position: absolute; inset: 0;
+  background-image: url('../assets/images/genevieve_claisse_petit_grumeau_2.webp');
+  background-size: cover;
+  background-position: center;
+  opacity: .55;
+  filter: contrast(1.05);
+}
+.hero__art::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(14,26,43,.2) 0%, rgba(14,26,43,.85) 100%);
+}
+.hero__inner {
+  position: relative;
+  max-width: var(--max);
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(3rem, 10vh, 6rem) var(--pad) clamp(3rem, 10vh, 5rem);
+}
+.hero__eyebrow {
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.7);
+  margin: 0 0 1.5rem;
+}
+.hero__title {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: clamp(2.6rem, 8vw, 6.25rem);
+  line-height: .98;
+  letter-spacing: -.02em;
+  margin: 0;
+  display: grid;
+  gap: 0;
+}
+.hero__title span { display: block; }
+.hero__lede {
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+  max-width: 56ch;
+  margin: 1.75rem 0 0;
+  color: rgba(255,255,255,.85);
+}
+
+/* ---------- Sections ---------- */
+.band {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5.5rem) var(--pad);
+  scroll-margin-top: 80px;
+}
+.band__head {
+  margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
+  display: grid;
+  gap: .5rem;
+  max-width: 60ch;
+}
+.band__title {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  letter-spacing: -.015em;
+  margin: 0;
+  color: var(--ink);
+}
+.band__deck {
+  margin: 0;
+  font-family: var(--font-mono);
+  color: var(--ink-muted);
+  font-size: 1rem;
+}
+
+/* ---------- Card grid ---------- */
+.grid {
+  display: grid;
+  gap: var(--gap);
+}
+.grid--cards {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  align-items: stretch;
+}
+
+.card {
+  display: flex; flex-direction: column;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in oklab, var(--accent) 35%, var(--rule));
+}
+.card--feature { grid-column: span 2; }
+@media (max-width: 720px) { .card--feature { grid-column: span 1; } }
+
+.card__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--rule);   /* shown while img is decoding / for missing files */
+}
+.card--feature .card__thumb { aspect-ratio: 16 / 9; }
+
+.card__body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex; flex-direction: column;
+  gap: .5rem;
+  flex: 1;
+}
+.card__pub {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.card__title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  margin: 0;
+}
+.card--feature .card__title { font-size: clamp(1.3rem, 2.4vw, 1.75rem); }
+.card__org {
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+.card__desc {
+  margin: 0;
+  font-size: .98rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  flex: 1;
+}
+.card__role {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: .5rem;
+}
+.card--static { cursor: default; }
+.card--static:hover { transform: none; box-shadow: var(--shadow-sm); border-color: var(--rule); }
+
+/* ---------- Logo wall ---------- */
+.band--clients .band__head { max-width: 60ch; }
+.logo-wall {
+  list-style: none; padding: 0; margin: 0;
+  display: grid;
+  /* Fixed column counts so the wall has a steady rhythm instead of stranding items in big sparse cells.
+     4 cols × 4 rows = 16 logos, neat. */
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(.5rem, 1.5vw, 1.25rem);
+}
+@media (max-width: 900px) { .logo-wall { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .logo-wall { grid-template-columns: repeat(2, 1fr); } }
+
+.logo-wall li {
+  display: grid;
+  place-items: center;
+  padding: clamp(.5rem, 1vw, .75rem);
+  aspect-ratio: 1 / 1;            /* square cells = biggest logos that all line up */
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  transition: background var(--t), border-color var(--t);
+  overflow: hidden;
+}
+.logo-wall li:hover {
+  background: var(--bg-elev);
+  border-color: var(--rule);
+}
+.logo-wall img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;             /* fill the square, preserve aspect */
+  /* Default state: clean grayscale, slightly muted so the wall reads as one band of names. */
+  filter: grayscale(100%);
+  opacity: .6;
+  transition: filter var(--t), opacity var(--t), transform var(--t);
+}
+.logo-wall li:hover img {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+/* In dark mode, most of these logos are dark on transparent — invert so they read on the dark bg,
+   then drop the invert on hover so the original colors come through. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-wall img {
+    filter: grayscale(100%) invert(1);
+    opacity: .7;
+  }
+  :root:not([data-theme="light"]) .logo-wall li:hover img {
+    filter: invert(1);
+    opacity: 1;
+  }
+}
+:root[data-theme="dark"] .logo-wall img {
+  filter: grayscale(100%) invert(1);
+  opacity: .7;
+}
+:root[data-theme="dark"] .logo-wall li:hover img {
+  filter: invert(1);
+  opacity: 1;
+}
+
+/* ---------- Writing list ---------- */
+.writing-list {
+  list-style: none; padding: 0; margin: 0;
+  display: grid;
+  border-top: 1px solid var(--rule);
+}
+.writing-list li {
+  border-bottom: 1px solid var(--rule);
+}
+.writing-list a {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .25rem;
+  padding: 1.1rem .25rem;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  transition: color var(--t), background var(--t);
+}
+.writing-list a:hover { color: var(--accent); }
+.writing-list em {
+  font-family: var(--font-mono);
+  font-style: italic;
+  font-size: .9rem;
+  color: var(--ink-muted);
+  font-weight: 400;
+}
+
+/* ---------- Contact ---------- */
+.band--contact { padding-top: clamp(4rem, 10vw, 6rem); padding-bottom: clamp(4rem, 10vw, 6rem); }
+.contact-list {
+  list-style: none; padding: 0; margin: 0;
+  display: grid;
+  gap: .5rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(1.4rem, 4vw, 2.25rem);
+  letter-spacing: -.01em;
+}
+.contact-list a {
+  display: inline-block;
+  padding: .25rem 0;
+  border-bottom: 2px solid transparent;
+  color: var(--ink);
+  transition: color var(--t), border-color var(--t);
+}
+.contact-list a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.contact-list__aside {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: .55em;
+  color: var(--ink-muted);
+  vertical-align: middle;
+  margin-left: .25em;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  border-top: 1px solid var(--rule);
+  padding: 2rem var(--pad);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  color: var(--ink-muted);
+}

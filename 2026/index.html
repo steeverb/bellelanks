@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Belinda Lanks — 2026 Refresh · Pick a direction</title>
+  <meta name="description" content="Four design directions for Belinda Lanks's 2026 portfolio refresh. Pick one to review." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper: #f5f0e6;
+      --paper-deep: #ede5d4;
+      --ink: #1c1a16;
+      --ink-2: #4a443c;
+      --rule: #d6cdb8;
+      --accent: #872617;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Inter", system-ui, -apple-system, sans-serif;
+      --t: 200ms cubic-bezier(.2,.7,.2,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; transition: color var(--t); }
+    a:hover { color: var(--ink); }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 4vw, 2.5rem) clamp(2rem, 4vw, 3rem);
+    }
+    .kicker {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: .72rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 .5rem;
+      padding-bottom: .35rem;
+      border-bottom: 1px solid var(--accent);
+      display: inline-block;
+    }
+    .title {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -.015em;
+      margin: 1rem 0 1rem;
+    }
+    .title em { font-style: italic; color: var(--accent); font-weight: 400; }
+    .lede {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+      line-height: 1.5;
+      color: var(--ink-2);
+      margin: 0 0 3rem;
+      max-width: 56ch;
+    }
+
+    .deck {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid var(--rule);
+    }
+    .deck li { border-bottom: 1px solid var(--rule); }
+    .card {
+      display: grid;
+      grid-template-columns: 4ch 1fr auto;
+      gap: 1.25rem;
+      align-items: baseline;
+      padding: 1.5rem .25rem;
+      color: var(--ink);
+      transition: padding-left var(--t), background var(--t);
+    }
+    .card:hover {
+      padding-left: .75rem;
+      background: linear-gradient(90deg, var(--paper-deep) 0%, transparent 80%);
+    }
+    .card:hover .card__title { color: var(--accent); }
+    .card__num {
+      font-family: var(--sans);
+      font-size: .82rem;
+      letter-spacing: .12em;
+      color: var(--ink-2);
+      font-variant-numeric: tabular-nums;
+    }
+    .card__body { display: grid; gap: .35rem; }
+    .card__label {
+      font-family: var(--sans);
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .card__title {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+      line-height: 1.15;
+      letter-spacing: -.01em;
+      transition: color var(--t);
+    }
+    .card__desc {
+      font-family: var(--serif);
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--ink-2);
+      margin: 0;
+      max-width: 60ch;
+    }
+    .card__arrow {
+      font-family: var(--sans);
+      font-size: .82rem;
+      color: var(--accent);
+      letter-spacing: .04em;
+      align-self: center;
+      transition: transform var(--t);
+    }
+    .card:hover .card__arrow { transform: translateX(3px); }
+    .card__pill {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--paper);
+      background: var(--accent);
+      padding: .15rem .5rem;
+      border-radius: 2px;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+
+    .meta {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: var(--sans);
+      font-size: .9rem;
+      color: var(--ink-2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .meta a {
+      color: var(--ink);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 1px;
+    }
+    .meta a:hover { color: var(--accent); }
+
+    @media (max-width: 560px) {
+      .card { grid-template-columns: 3ch 1fr; }
+      .card__arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<main class="wrap">
+
+  <p class="kicker">For Belinda · 2026 Refresh</p>
+  <h1 class="title">Four directions, <em>one decision.</em></h1>
+  <p class="lede">
+    Same content, four different ways of presenting it. Open whichever you'd
+    like to react to — or all of them, in any order. Notes and tradeoffs are
+    in the <a href="README.md">README</a>.
+  </p>
+
+  <ul class="deck" role="list">
+
+    <li>
+      <a class="card" href="04-editorial-hybrid/index.html">
+        <span class="card__num">04</span>
+        <span class="card__body">
+          <span class="card__label">Editorial · hybrid <span class="card__pill">Recommended</span></span>
+          <span class="card__title">Editorial &mdash; with case study sub-pages</span>
+          <span class="card__desc">Magazine sensibility. Each major project gets its own page (Samsung Explore, Citi Mortgage, New York Life, Magenta, Disrupt Aging) with a real role/client/output meta strip and room to breathe.</span>
+        </span>
+        <span class="card__arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="card" href="01-refresh/index.html">
+        <span class="card__num">01</span>
+        <span class="card__body">
+          <span class="card__label">Refresh + Modernize</span>
+          <span class="card__title">Closest to the current site</span>
+          <span class="card__desc">Faithful upgrade of the existing card grid. Modern type, real accent color, light/dark mode. Lowest cognitive load for returning visitors.</span>
+        </span>
+        <span class="card__arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="card" href="02-editorial/index.html">
+        <span class="card__num">02</span>
+        <span class="card__body">
+          <span class="card__label">Editorial · serif-led</span>
+          <span class="card__title">A magazine, on one page</span>
+          <span class="card__desc">All on one URL: cover, drop-cap featured case, byline grid, typographic masthead. Same DNA as Direction 4 but no sub-pages.</span>
+        </span>
+        <span class="card__arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a class="card" href="03-minimal/index.html">
+        <span class="card__num">03</span>
+        <span class="card__body">
+          <span class="card__label">Minimal · typographic</span>
+          <span class="card__title">Type does the work</span>
+          <span class="card__desc">No hero image. Mono-driven, list-based, voice-forward. Heavy whitespace. Of-the-moment if the audience skews tech/design-product.</span>
+        </span>
+        <span class="card__arrow">→</span>
+      </a>
+    </li>
+
+  </ul>
+
+  <p class="meta">
+    <span>Belinda Lanks · 2026 Refresh</span>
+    <a href="README.md">Read the comparison</a>
+    <a href="wireframes/direction-2_editorial_wireframe.svg">Direction 2 wireframe</a>
+  </p>
+
+</main>
+
+</body>
+</html>
